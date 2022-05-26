@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>CONTACT</title>
+        <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Grape+Nuts&family=Kanit&family=Koulen&family=Pacifico&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <style>
+        *{
+            scroll-behavior: smooth!important;
+        }
+        body, html{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header, footer{
+            position: relative;
+            width: 100%;
+            background-color: #282828;
+        }
+
+        header{
+            height:10vh;
+        }
+
+        header h1{
+            position: absolute;
+            margin-top:12px;
+        }
+
+        footer{
+            text-align: center;
+            height: 7vh;
+            bottom: 0;
+            padding: 10px;
+        }
+
+        h2{
+
+            left: 45%;
+            color: #000000;
+            font-family: 'Alfa Slab One', cursive;
+            font-size: medium;
+        }
+
+        .title {
+
+            padding: 3px;
+            float: left;
+            margin-left: 2%;
+            margin-top: 10px;
+            font-family: 'Koulen', cursive;
+            color: #ffffff;
+        }
+
+        ul{
+            width: auto;
+            float: right;
+            margin-top: 8px;
+        }
+
+        li{
+            display: inline-block;
+            padding: 15px 30px;
+        }
+
+        .menu{
+            text-align: center;
+            color: #ffffff;
+            text-decoration: none;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.2vw;
+            float: right;
+        }
+
+        .menu:hover{
+            color: #39ca74;
+            transition: 0.5s;
+        }
+
+        .active{
+            color: #39ca74;
+        }
+
+        a{
+            text-align: center;
+            color: #ffffff;
+            text-decoration: none;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.2vw;
+        }
+
+        a:hover{
+            color: #000000;
+            transition: 0.5s;
+        }
+
+        nav{
+            z-index: 500;
+            padding: 2px 90px;
+        }
+
+        .label{
+            font-family: 'Kanit';
+            font-size: 150%;
+        }
+
+        .submit{
+            background-color: #045b27;
+            color: #ffffff;
+            border-radius: 5px;
+            font-weight: bold;
+            padding: 10px;
+            transition: .5s;
+        }
+
+        .submit:hover{
+            box-shadow: -10px 10px #282828;
+            transition: .5s;
+        }
+
+        .reset{
+            background-color: #045b27;
+            color: #ffffff;
+            border-radius: 5px;
+            font-weight: bold;
+            padding: 10px;
+            transition: .5s;
+        }
+
+        .reset:hover{
+            box-shadow: -10px 10px #282828;
+            transition: .5s;
+        }
+
+        .fa {
+            color: #000000;
+            padding: 20px;
+            font-size: 50px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .fa:hover {
+            color: #39ca74;
+            opacity: 0.7;
+        }
+
+
+
+
+    </style>
+
+<body style="background-image: url(bg.jpg); background-attachment: fixed;">
+    <header>
+        <h1 class="title">NEW <span style="color:#39ca74">LOOK</span></h1>
+        <nav>
+            <ul>
+                <li><a class="menu" href="index.html">Home</a></li>
+                <li><a class="menu" href="gallery.html">Gallery</a></li>
+                <li><a class="menu" href="collection.html">Collection</a></li>
+                <li><a class="menu " href="about.html">About</a></li>
+                <li><a class="menu active" href="contact.html">Contact</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <section style="background-color:#39ca74; padding: 0.005%; width: 100%;">
+        <div style="text-align: center;">
+            <h1 style="font-family: 'Koulen'; font-size: 200%;">Contact</h1>
+        </div>
+    </section>
+
+    <h2 style="text-align: center; color:#282828; font-size: 300%;"">CONTACT US</h2>
+
+    <section style="background-color:rgba(255, 255, 255, 0.8);">
+        <form action="results.html" method="GET" enctype="multipart/form-data">
+            <div style="text-align: center;">
+
+                <div>
+                    <lable class="label" for="name" style="width: 60%; display:inline-block">Name</lable><br>
+                    <input type="text" name="name" id="name" style="width: 30%;font-size:150%;">
+                </div>
+    
+                <div>
+                    <lable class="label" for="phoneNum" style="width: 60%; display:inline-block">Phone Number</lable><br>
+                    <input type="phone" name="phoneNum" id="phoneNum" style="width: 30%;font-size:150%;">
+                </div>
+    
+                <div>
+                    <lable class="label" for="email" style="width: 60%; display:inline-block">Email</lable><br>
+                    <input type="email" name="email" id="email" style="width: 30%;font-size:150%;">
+                </div>
+
+                <div>
+                    <label class="label" for="gender">Gender</label><br>
+                    <select name="gender" id="genderr" style="font-size: 150%;">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+    
+                <div>
+                    <h2 style="font-family:'Kanit';font-size: 150%">Description</h2>
+                    <textarea id="desc" name="desc" rows="4" cols="50" style="width: 30%;font-size: 150%;"></textarea>
+                </div>
+            </div>
+    
+            <div style="text-align: center; margin-bottom: 5%;">
+                <button class="reset" type="reset">Reset</button>        
+                <button class="submit" type="submit">Submit</button>
+            </div>
+        </form>
+        
+    </section>
+
+    <section>
+        <div style="text-align: center;">
+            <a href="https://www.instagram.com/imtiazaziz_/" class="fa fa-instagram"></a>
+
+            <a href="https://github.com/ImtiazAzizz" class="fa fa-github"></a>
+
+            <a href="https://wa.me/+60143375721" class="fa fa-whatsapp"></a>
+        </div>
+        
+    </section>
+
+
+    
+
+</body>
+    
+<footer id="foot" name="foot">
+    <p style="font-weight: light;color: #909497;font-family: 'Alfa Slab One';">&copy; Copyright@ImtiazAziz</p>
+</footer>
+
+    
+</html>
